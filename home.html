@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="'title">Swiggy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <a href="#" class="logo"><img src="./Swiggy-logo.png" alt="logo"></a>
+    <h3 style="color: darkslategrey;">Online Food Delivery Website </h3>
+        
+        <div id="container-main">
+            <div id="container-sub">
+                <center>
+                <img src="./food-1.webp" alt="so">
+                <h3> KFC Family Combo </h3>
+                <p>Rs: <span class="price"  style="color: rgb(0, 0, 0);">899 </span></p>
+                <button style="width:100px; height: 50px; background-color: beige;" onclick="window.location.href='file:///C:/Users/DELL/OneDrive/Desktop/23MX214_WAD_Lab_Questions/product_description.html'">View Details</button>
+                <button style="width:100px; height: 50px; background-color: beige;" onclick="addToCart('KFC Family Combo', 1500)">Add to Cart</button>
+            </center>
+            </div>
+            <div id="container-sub">
+                <center>
+                    <img src="./food-2.webp" alt="so">
+                    <h3> Egg Briyani </h3>
+                    <p>Rs: <span class="price" style="color: rgb(0, 0, 0);">150 </span></p>
+                    <button style="width:100px; height: 50px; background-color: beige;" onclick="window.location.href=''">View Details</button>
+                    <button style="width:100px; height: 50px; background-color: beige;" onclick="addToCart('Egg Briyani', 150)">Add to Cart</button>             
+                </center>
+            </div>
+            <div id="container-sub">
+                <center>
+                    <img src="./food-3.webp" alt="so">
+                    <h3> Veg Meals </h3>
+                    <p>Rs: <span class="price" style="color: rgb(0, 0, 0);">120 </span></p>
+                    <button style="width:100px; height: 50px; background-color: beige;" onclick="window.location.href=''">View Details</button>
+                    <button style="width:100px; height: 50px; background-color: beige;" onclick="addToCart('Veg Meals', 120)">Add to Cart</button>                
+                </center>
+            </div>
+
+            <div id="container-sub">
+                <center>
+                    <img src="./food-4.webp" alt="so">
+                    <h3> Veg Fried Rice </h3>
+                    <p>Rs: <span class="price" style="color: rgb(0, 0, 0);">90 </span></p>
+                    <button style="width: 100px; height: 50px; background-color: beige;" onclick="window.location.href=''">View Details</button>
+                    <button style="width:100px; height: 50px; background-color: beige;" onclick="addToCart('Veg Fried Rice', 90)">Add to Cart</button>
+                </center>
+            </div>  
+
+            <div id="container-sub">
+                <center>
+                    <img src="./food-5.webp" alt="so">
+                    <h3> Chicken Burger</h3>
+                    <p>Rs: <span class="price" style="color: rgb(0, 0, 0);">120 </span></p>
+                    <button style="width: 100px; height: 50px; background-color: beige;" onclick="window.location.href=''">View Details</button>
+                    <button style="width:100px; height: 50px; background-color: beige;" onclick="addToCart('Chicken Burger', 120)">Add to Cart</button>                
+                </center>
+            </div>
+            
+            <div id="container-sub">
+                <center>
+                    <img src="./food-6.webp" alt="so">
+                    <h3> Chicken Briyani </h3>
+                    <p>Rs: <span class="price" style="color: rgb(0, 0, 0);">180 </span></p>
+                    <button style="width: 100px; height: 50px; background-color: beige;" onclick="window.location.href=''">View Details</button>
+                    <button style="width:100px; height: 50px; background-color: beige;" onclick="addToCart('Chicken Briyani ', 180)">Add to Cart</button>
+                </center>
+            </div>
+        </center>
+            <div class="cart">
+                <h2>Your Cart</h2>
+                <ol id="cart-items";">
+                </ol>
+                <p>Total: Rs.<span id="total">0</span></p>
+                <button onclick="checkout()" style="width: 250px; height: 50px; background-color: beige;">PLACE ORDER </button>        
+            </div>
+    
+<script src="order.js"></script>
+</body>
+</html>
